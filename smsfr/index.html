@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send SMS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Send SMS</h1>
+  <form id="smsForm">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+    
+    <button type="submit">Send SMS</button>
+  </form>
+
+  <p id="response" style="margin-top: 20px;"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
